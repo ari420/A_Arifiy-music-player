@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="asset/node_modules/remixicon/fonts/remixicon.css"
     />
+    <link rel="manifest" href="manifest.json">
   </head>
   <body>
     <nav class="navbar">
@@ -249,6 +250,17 @@
         </li>
       </ul>
     </nav>
+     <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(error => {
+            console.error('Service Worker registration failed:', error);
+          });
+      }      
+    </script>
 
     <!-- end nav player///////////////////////////////////////////////////////// -->
     <script src="asset/js/main.js"></script>
