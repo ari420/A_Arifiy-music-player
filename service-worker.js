@@ -1,13 +1,13 @@
 // Define a cache name and the files to cache
 const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
-  'asset/css/css_main.css',
-  'asset/css/css_reset.css',
-  'asset/img/preview512.jpg',
-  'asset/img/preview192.jpg',
-  'asset/js/main.js',
-  'index.html',
-  'asset/node_modules/remixicon/fonts/remixicon.css'
+  '/asset/css/css_main.css',
+  '/asset/css/css_reset.css',
+  '/asset/img/preview512.jpg',
+  '/asset/img/preview192.jpg',
+  '/asset/js/main.js',
+  '/index.html',
+  '/asset/node_modules/remixicon/fonts/remixicon.css'
 ];
 
 // Install event - caches the app shell
